@@ -202,6 +202,6 @@ For RTP:
 Nutanix Version Info
 ++++++++++++++++++++
 
-- **AHV Version** - AHV 20170830.185 (5.9+/5.10+)
-- **AOS Version** - 5.10.2
-- **PC Version** - 5.10.2
+- **AHV Version** - AHV 20170830.279 (5.10+)
+- **AOS Version** - 5.11
+- **PC Version** - 5.11
