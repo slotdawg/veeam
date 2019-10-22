@@ -9,10 +9,6 @@ Veeam Availability for Nutanix AHV
 Overview
 ++++++++
 
-With customers that include 82% of the Fortune 500 and 58% of the Global 2000, Veeam is a leader in backup and availability across physical, virtual, and cloud environments. With Veeam Backup & Replication v9.5, Veeam has introduced support for Nutanix AHV through the Backup Proxy for AHV.
-
-.. figure:: images/veeamstats.png
-
 **In this exercise you will deploy and configure a Veeam Backup Server, deploy and configure a Backup Proxy for AHV, configure the connection to your Nutanix cluster and existing Veeam Backup & Replication infrastructure, and execute backup and restore operations.**
 
 Deploying Veeam Backup Server
@@ -79,7 +75,7 @@ Open **PowerShell** and execute the following command:
   # Initializes and formats the 250GB disk added to the VeeamServer VM
   Get-Disk | Where partitionstyle -eq 'raw' | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "Backups" -Confirm:$false
 
-Download the temporary Veeam Availability Suite license file from http://10.42.194.11/workshop_staging/veeam/ to apply during installation.
+Register for a Veeam NFR license to apply during installation `Here <https://go.veeam.com/free-nfr-van?ad=nutanix>`_.
 
 Open the **Veeam Backup and Replication 9.5** Setup from the mounted .iso image. Click **Install**.
 
